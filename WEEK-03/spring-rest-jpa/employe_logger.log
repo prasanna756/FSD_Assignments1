@@ -1,0 +1,117 @@
+[32m2024-02-03 22:42:16.743[0;39m [INFO] com.hexaware.springrestjpa.SpringRestJpaApplication [main] Starting SpringRestJpaApplication using Java 17.0.9 with PID 12972 (D:\spring-rest-jpa\target\classes started by Prasanna in D:\spring-rest-jpa)
+[32m2024-02-03 22:42:16.749[0;39m [INFO] com.hexaware.springrestjpa.SpringRestJpaApplication [main] No active profile set, falling back to 1 default profile: "default"
+[32m2024-02-03 22:42:17.818[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[32m2024-02-03 22:42:17.902[0;39m [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 70 ms. Found 1 JPA repository interface.
+[32m2024-02-03 22:42:18.611[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+[32m2024-02-03 22:42:18.626[0;39m [INFO] org.apache.catalina.core.StandardService [main] Starting service [Tomcat]
+[32m2024-02-03 22:42:18.627[0;39m [INFO] org.apache.catalina.core.StandardEngine [main] Starting Servlet engine: [Apache Tomcat/10.1.18]
+[32m2024-02-03 22:42:18.790[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [main] Initializing Spring embedded WebApplicationContext
+[32m2024-02-03 22:42:18.792[0;39m [INFO] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1988 ms
+[32m2024-02-03 22:42:18.981[0;39m [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+[32m2024-02-03 22:42:19.054[0;39m [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.20.Final
+[32m2024-02-03 22:42:19.058[0;39m [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+[32m2024-02-03 22:42:19.386[0;39m [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+[32m2024-02-03 22:42:19.419[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+[32m2024-02-03 22:42:19.803[0;39m [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d617b07
+[32m2024-02-03 22:42:19.805[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+[32m2024-02-03 22:42:19.889[0;39m [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[32m2024-02-03 22:42:20.919[0;39m [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[32m2024-02-03 22:42:20.994[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32m2024-02-03 22:42:21.350[0;39m [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+[32m2024-02-03 22:42:21.939[0;39m [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32m2024-02-03 22:42:23.125[0;39m [INFO] org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+[32m2024-02-03 22:42:23.138[0;39m [INFO] com.hexaware.springrestjpa.SpringRestJpaApplication [main] Started SpringRestJpaApplication in 6.928 seconds (process running for 7.903)
+[32m2024-02-03 22:42:55.174[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32m2024-02-03 22:42:55.174[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+[32m2024-02-03 22:42:55.177[0;39m [INFO] org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Completed initialization in 3 ms
+[32m2024-02-03 22:42:55.835[0;39m [INFO] org.springdoc.api.AbstractOpenApiResource [http-nio-8080-exec-2] Init duration for springdoc-openapi is: 460 ms
+2024-02-03 22:43:28.606 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] Starting SpringRestJpaApplicationTests using Java 17.0.9 with PID 12888 (started by Prasanna in D:\spring-rest-jpa)
+2024-02-03 22:43:28.608 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-02-03 22:43:29.598 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-03 22:43:29.701 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 89 ms. Found 1 JPA repository interface.
+2024-02-03 22:43:30.393 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-03 22:43:30.496 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.20.Final
+2024-02-03 22:43:30.501 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2024-02-03 22:43:31.002 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-03 22:43:31.046 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-02-03 22:43:31.523 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6068ebb2
+2024-02-03 22:43:31.526 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-02-03 22:43:31.612 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-02-03 22:43:32.910 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-03 22:43:32.992 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 22:43:33.398 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-03 22:43:34.233 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-03 22:43:35.940 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] Started SpringRestJpaApplicationTests in 7.83 seconds (process running for 9.751)
+2024-02-03 22:43:37.018 [INFO] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.hexaware.springrestjpa.restcontroller.EmployeeRestControllerTest]: EmployeeRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-03 22:43:37.036 [INFO] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringRestJpaApplication for test class com.hexaware.springrestjpa.restcontroller.EmployeeRestControllerTest
+[32m2024-02-03 22:43:37.517[0;39m [INFO] com.hexaware.springrestjpa.restcontroller.EmployeeRestController [http-nio-8080-exec-4] EmployeeRestController executing..
+[32m2024-02-03 22:43:37.518[0;39m [INFO] com.hexaware.springrestjpa.service.EmployeeServiceImp [http-nio-8080-exec-4] com.hexaware.springrestjpa.dto.EmployeeDTO@7ef58368 is added from add service
+[32m2024-02-03 22:43:37.551[0;39m [WARN] com.hexaware.springrestjpa.restcontroller.EmployeeRestController [http-nio-8080-exec-4] employee object is not null in RestController
+2024-02-03 22:43:37.601 [INFO] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.hexaware.springrestjpa.service.EmployeeServiceImpTest]: EmployeeServiceImpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-03 22:43:37.616 [INFO] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringRestJpaApplication for test class com.hexaware.springrestjpa.service.EmployeeServiceImpTest
+2024-02-03 22:43:37.642 [INFO] com.hexaware.springrestjpa.service.EmployeeServiceImpTest [main] Employee Added Successfully
+2024-02-03 22:43:38.010 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 22:43:38.014 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-03 22:43:38.031 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-02-03 22:47:10.607 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] Starting SpringRestJpaApplicationTests using Java 17.0.9 with PID 24920 (started by Prasanna in D:\spring-rest-jpa)
+2024-02-03 22:47:10.609 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-02-03 22:47:11.690 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-03 22:47:11.792 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 88 ms. Found 1 JPA repository interface.
+2024-02-03 22:47:12.562 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-03 22:47:12.686 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.20.Final
+2024-02-03 22:47:12.692 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2024-02-03 22:47:13.247 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-03 22:47:13.300 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-02-03 22:47:13.856 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4fa5cc73
+2024-02-03 22:47:13.861 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-02-03 22:47:13.956 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-02-03 22:47:15.504 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-03 22:47:15.597 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 22:47:16.130 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-03 22:47:17.235 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-03 22:47:18.958 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] Started SpringRestJpaApplicationTests in 8.822 seconds (process running for 10.948)
+2024-02-03 22:47:20.024 [INFO] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.hexaware.springrestjpa.restcontroller.EmployeeRestControllerTest]: EmployeeRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-03 22:47:20.036 [INFO] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringRestJpaApplication for test class com.hexaware.springrestjpa.restcontroller.EmployeeRestControllerTest
+[32m2024-02-03 22:47:20.516[0;39m [INFO] com.hexaware.springrestjpa.restcontroller.EmployeeRestController [http-nio-8080-exec-3] EmployeeRestController executing..
+[32m2024-02-03 22:47:20.519[0;39m [INFO] com.hexaware.springrestjpa.service.EmployeeServiceImp [http-nio-8080-exec-3] com.hexaware.springrestjpa.dto.EmployeeDTO@20b001d3 is added from add service
+[32m2024-02-03 22:47:20.524[0;39m [WARN] com.hexaware.springrestjpa.restcontroller.EmployeeRestController [http-nio-8080-exec-3] employee object is not null in RestController
+2024-02-03 22:47:20.576 [INFO] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.hexaware.springrestjpa.service.EmployeeServiceImpTest]: EmployeeServiceImpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-03 22:47:20.587 [INFO] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringRestJpaApplication for test class com.hexaware.springrestjpa.service.EmployeeServiceImpTest
+2024-02-03 22:47:20.610 [INFO] com.hexaware.springrestjpa.service.EmployeeServiceImpTest [main] Employee Added Successfully
+2024-02-03 22:47:20.877 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 22:47:20.881 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-03 22:47:20.900 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2024-02-03 22:47:54.428 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] Starting SpringRestJpaApplicationTests using Java 17.0.9 with PID 1620 (started by Prasanna in D:\spring-rest-jpa)
+2024-02-03 22:47:54.430 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] No active profile set, falling back to 1 default profile: "default"
+2024-02-03 22:47:55.555 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-02-03 22:47:55.663 [INFO] org.springframework.data.repository.config.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 91 ms. Found 1 JPA repository interface.
+2024-02-03 22:47:56.415 [INFO] org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-02-03 22:47:56.491 [INFO] org.hibernate.Version [main] HHH000412: Hibernate ORM core version 6.2.20.Final
+2024-02-03 22:47:56.497 [INFO] org.hibernate.cfg.Environment [main] HHH000406: Using bytecode reflection optimizer
+2024-02-03 22:47:57.005 [INFO] org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-02-03 22:47:57.051 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2024-02-03 22:47:57.545 [INFO] com.zaxxer.hikari.pool.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6068ebb2
+2024-02-03 22:47:57.549 [INFO] com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2024-02-03 22:47:57.626 [WARN] org.hibernate.orm.deprecation [main] HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-02-03 22:47:58.882 [INFO] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-02-03 22:47:58.955 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 22:47:59.420 [INFO] org.springframework.data.jpa.repository.query.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-02-03 22:48:00.356 [WARN] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-02-03 22:48:02.001 [INFO] com.hexaware.springrestjpa.SpringRestJpaApplicationTests [main] Started SpringRestJpaApplicationTests in 8.031 seconds (process running for 10.015)
+2024-02-03 22:48:03.037 [INFO] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.hexaware.springrestjpa.restcontroller.EmployeeRestControllerTest]: EmployeeRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-03 22:48:03.055 [INFO] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringRestJpaApplication for test class com.hexaware.springrestjpa.restcontroller.EmployeeRestControllerTest
+[32m2024-02-03 22:48:03.377[0;39m [INFO] com.hexaware.springrestjpa.restcontroller.EmployeeRestController [http-nio-8080-exec-1] EmployeeRestController executing..
+[32m2024-02-03 22:48:03.378[0;39m [INFO] com.hexaware.springrestjpa.service.EmployeeServiceImp [http-nio-8080-exec-1] com.hexaware.springrestjpa.dto.EmployeeDTO@5b2a5cbf is added from add service
+[32m2024-02-03 22:48:03.384[0;39m [WARN] com.hexaware.springrestjpa.restcontroller.EmployeeRestController [http-nio-8080-exec-1] employee object is not null in RestController
+2024-02-03 22:48:03.435 [INFO] org.springframework.test.context.support.AnnotationConfigContextLoaderUtils [main] Could not detect default configuration classes for test class [com.hexaware.springrestjpa.service.EmployeeServiceImpTest]: EmployeeServiceImpTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-02-03 22:48:03.445 [INFO] org.springframework.boot.test.context.SpringBootTestContextBootstrapper [main] Found @SpringBootConfiguration com.hexaware.springrestjpa.SpringRestJpaApplication for test class com.hexaware.springrestjpa.service.EmployeeServiceImpTest
+2024-02-03 22:48:03.473 [INFO] com.hexaware.springrestjpa.service.EmployeeServiceImpTest [main] Employee Added Successfully
+2024-02-03 22:48:03.749 [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-02-03 22:48:03.753 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2024-02-03 22:48:03.767 [INFO] com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+[32m2024-02-03 22:48:44.773[0;39m [INFO] org.springframework.boot.admin.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin [RMI TCP Connection(16)-127.0.0.1] Application shutdown requested.
+[32m2024-02-03 22:48:44.956[0;39m [INFO] org.apache.catalina.core.StandardService [RMI TCP Connection(16)-127.0.0.1] Stopping service [Tomcat]
+[32m2024-02-03 22:48:44.973[0;39m [INFO] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [RMI TCP Connection(16)-127.0.0.1] Destroying Spring FrameworkServlet 'dispatcherServlet'
+[32m2024-02-03 22:48:45.083[0;39m [INFO] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean [RMI TCP Connection(16)-127.0.0.1] Closing JPA EntityManagerFactory for persistence unit 'default'
+[32m2024-02-03 22:48:45.116[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown initiated...
+[32m2024-02-03 22:48:45.162[0;39m [INFO] com.zaxxer.hikari.HikariDataSource [RMI TCP Connection(16)-127.0.0.1] HikariPool-1 - Shutdown completed.
