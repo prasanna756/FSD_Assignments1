@@ -1,0 +1,60 @@
+<div class="container">
+    <!-- Add New Policy Form -->
+    <h2 class="text-center">Add New Policy</h2>
+    <form (submit)="addPolicy()">
+      <div class="form-group">
+        <label for="policyName">Policy Name</label>
+        <input type="text" class="form-control form-control-sm" id="policyName" [(ngModel)]="newPolicy.policyName" name="policyName">
+      </div>
+      <div class="form-group">
+        <label for="policyDescription">Policy Description</label>
+        <input type="text" class="form-control form-control-sm" id="policyDescription" [(ngModel)]="newPolicy.policyDescription" name="policyDescription">
+      </div>
+      <div class="form-group">
+        <label for="company">Company</label>
+        <input type="text" class="form-control form-control-sm" id="company" [(ngModel)]="newPolicy.company" name="company">
+      </div>
+      <div class="form-group">
+        <label for="policyType">Policy Type</label>
+        <input type="text" class="form-control form-control-sm" id="policyType" [(ngModel)]="newPolicy.policyType" name="policyType">
+      </div>
+      <div class="form-group">
+        <label for="initialDeposit">Initial Deposit</label>
+        <input type="number" class="form-control form-control-sm" id="initialDeposit" [(ngModel)]="newPolicy.initialDeposit" name="initialDeposit">
+      </div>
+      <div class="form-group">
+        <label for="termPeriod">Term Period</label>
+        <input type="text" class="form-control form-control-sm" id="termPeriod" [(ngModel)]="newPolicy.termPeriod" name="termPeriod">
+      </div>
+      <div class="form-group">
+        <label for="termAmount">Term Amount</label>
+        <input type="number" class="form-control form-control-sm" id="termAmount" [(ngModel)]="newPolicy.termAmount" name="termAmount">
+      </div>
+      <div class="form-group">
+        <label for="interest">Interest</label>
+        <input type="number" class="form-control form-control-sm" id="interest" [(ngModel)]="newPolicy.interest" name="interest">
+      </div>
+      <button type="submit" class="btn btn-primary">Add Policy</button>
+    </form>
+  
+    <!-- Policy List -->
+    <h2 class="text-center mt-5">Policy List</h2>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let policy of policies$ | async">
+        <div><strong>Policy ID:</strong> {{ policy.policyId }}</div>
+        <div><strong>Policy Name:</strong> {{ policy.policyName }}</div>
+        <div><strong>Policy Description:</strong> {{ policy.policyDescription }}</div>
+        <div><strong>Company:</strong> {{ policy.company }}</div>
+        <div><strong>Policy Type:</strong> {{ policy.policyType }}</div>
+        <div><strong>Initial Deposit:</strong> {{ policy.initialDeposit }}</div>
+        <div><strong>Term Period:</strong> {{ policy.termPeriod }}</div>
+        <div><strong>Term Amount:</strong> {{ policy.termAmount }}</div>
+        <div><strong>Interest:</strong> {{ policy.interest }}</div>
+        <div>
+          <button type="button" class="btn btn-danger" (click)="deletePolicy(policy.policyId)">Delete</button>
+          <button type="button" class="btn btn-secondary" (click)="updatePolicy(policy)">Update</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+  

@@ -1,0 +1,72 @@
+<form [formGroup]="policyForm" (ngSubmit)="onSubmit()" class="container col-lg-5">
+  
+  <div class="form-group">
+    <label for="policyName">Policy Name</label>
+    <input type="text"  id="policyName" formControlName="policyName" class="form-control" [ngClass]="{'is-invalid': submitted && f['policyName'].errors}">
+    <div *ngIf="submitted && f['policyName'].errors" class="invalid-feedback"></div>
+    <!-- <div *ngIf="f['policyName'].errors.required">Policy Name is required</div> -->
+    <div style="color: red;" *ngIf="f['policyName'].errors?.['required']">Policy Name is required</div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="policyDescription">Policy Description</label>
+    <textarea formControlName="policyDescription" class="form-control" [ngClass]="{'is-invalid': submitted && f['policyDescription'].errors}"></textarea>
+    <div *ngIf="submitted && f['policyDescription'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['policyDescription'].errors?.['required']">Policy Description is required</div>
+  </div>
+
+
+  <div class="form-group">
+    <label for="company">Company</label>
+    <input type="text" formControlName="company" class="form-control" [ngClass]="{'is-invalid': submitted && f['company'].errors}">
+    <div *ngIf="submitted && f['company'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['company'].errors?.['required']">Company is required</div>
+  </div>
+
+  <div class="form-group">
+    <label for="policyType">Policy Type</label>
+    <input type="text" formControlName="policyType" class="form-control" [ngClass]="{'is-invalid': submitted && f['policyType'].errors}">
+    <div *ngIf="submitted && f['policyType'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['policyType'].errors?.['required']">Policy Type is required</div>
+  </div>
+
+  <div class="form-group">
+    <label for="initialDeposit">Initial Deposit</label>
+    <input type="number" formControlName="initialDeposit" class="form-control" [ngClass]="{'is-invalid': submitted && f['initialDeposit'].errors}">
+    <div *ngIf="submitted && f['initialDeposit'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['initialDeposit'].errors?.['required']">Initial Deposit is required</div>
+  </div>
+  
+  <div class="form-group">
+    <label for="termPeriod">Term Period</label>
+    <select formControlName="termPeriod" class="form-control" [ngClass]="{'is-invalid': submitted && f['termPeriod'].errors}">
+      <option value="" disabled>Select term period</option>
+      <option value="Monthly">Monthly</option>
+      <option value="Quarterly">Quarterly</option>
+      <option value="Half-Yearly">Half-Yearly</option>
+      <option value="Annually">Annually</option>
+    </select>
+    <div *ngIf="submitted && f['termPeriod'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['termPeriod'].errors?.['required']">Term Period is required</div>
+  </div>
+
+  <div class="form-group">
+    <label for="termAmount">Term Amount</label>
+    <input type="number" formControlName="termAmount" class="form-control" [ngClass]="{'is-invalid': submitted && f['termAmount'].errors}">
+    <div *ngIf="submitted && f['termAmount'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['termAmount'].errors?.['required']">Term Amount is required</div>
+  </div>
+
+  <div class="form-group">
+    <label for="interest">Interest</label>
+    <input type="number" formControlName="interest" class="form-control" [ngClass]="{'is-invalid': submitted && f['interest'].errors}">
+    <div *ngIf="submitted && f['interest'].errors" class="invalid-feedback"></div>
+    <div style="color: red;" *ngIf="f['interest'].errors?.['required']">Interest is required</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="policyForm.invalid">Submit</button>
+  <div *ngIf="successMessage" class="alert alert-success mt-3">
+    {{ successMessage }}
+  </div>
+</form>

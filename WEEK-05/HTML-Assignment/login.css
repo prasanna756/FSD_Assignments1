@@ -1,0 +1,110 @@
+/* Reset margins and padding to prevent browser-specific default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* You can choose a font that closely matches the one in the image */
+    background-color: #f5f5f5; /* Set the background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    padding: 2rem;
+    position: relative; /* To position the pseudo-element */
+    overflow: hidden; /* To ensure the pseudo-element does not go outside the border-radius */
+}
+
+.container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:20%; 
+    background: linear-gradient(to bottom, #8e44ad, #9b59b6 100%);
+    border-radius: 8px 8px 0 0;
+    z-index: 0; 
+}
+
+.login-form h1 {
+    position: relative;
+    z-index: 1;
+    color: #fff; /* This will change the title color to white */
+    text-align: center; /* Horizontally center the text */
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 0; /* Adjust the top margin to position the heading */
+    margin-bottom: 32px; /* Adjust bottom margin as needed for spacing */
+    /* Place it above the pseudo-element */
+}
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 0.5rem;
+}
+
+.remember-me label {
+    font-size: 0.9rem;
+}
+
+.login-form a {
+    text-decoration: none;
+    color: #8e44ad; /* This should be the color used in the image */
+    font-size: 0.9rem;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #9b59b6, #8e44ad);
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.login-form button:hover {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.login-form p a {
+    color: #8e44ad;
+    text-decoration: none;
+}

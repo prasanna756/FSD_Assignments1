@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration Form </title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Registration Form</h1> 
+    <form action="">
+        <div class="form-item">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" required placeholder="Enter full name">
+        </div>
+
+        <div class="form-item">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter email address">
+        </div>
+
+        <div class="form-item flex-container">
+            <div class="flex-child">
+                <label for="mobileNumber">Mobile Number</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required placeholder="Enter mobile number">
+            </div>
+            <div class="flex-child">
+                <label for="birthDate">Birth Date</label>
+                <input type="date" id="birthDate" name="birthDate" required>
+            </div>
+        </div>
+
+        <div class="form-item gender-container">
+            <label>Gender</label>
+            <div class="gender-items">
+            <div class="gender-item"><input type="radio" id="male" name="gender" value="Male"><label for="male">Male</label></div>
+            <div class="gender-item"><input type="radio" id="female" name="gender" value="Female"><label for="female">Female</label></div>
+            <div class="gender-item"><input type="radio" id="preferNotToSay" name="gender" value="Prefer Not to Say"><label for="preferNotToSay">Prefer Not to Say</label></div>
+            </div>
+        </div>
+
+        <div class="form-item">
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </div>
+
+        <div class="form-item flex-container">
+            <div class="flex-child">
+            <label for="country"></label>
+            <select id="country" name="country" required>
+                <option value="">Select a country</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada</option>
+                <option value="China">China</option>
+                <option value="France">France</option>
+                <option value="Germany">Germany</option>
+                <option value="India">India</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Italy">Italy</option>
+                <option value="Japan">Japan</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Russia">Russia</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="South Africa">South Africa</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Spain">Spain</option>
+                <option value="Sweden">Sweden</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="United States">United States</option>
+            </select>
+        </div>
+
+        <div class="flex-child">
+            <label for="postalCode"></label>
+            <input type="text" id="postalCode" name="postalCode" required placeholder="Enter Postal Code">
+        </div>
+    </div>
+
+        
+
+        <button type="submit" class="submit-btn">Submit</button>
+
+    </form>
+</div>
+    
+</body>
+</html>
